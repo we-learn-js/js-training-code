@@ -1,34 +1,31 @@
-"// noprotect" 
-console.clear()
+"// noprotect";
+console.clear();
 
-function times (count, func, callback) {
-  if(!count) {
-    callback()
+function times(count, func, callback) {
+  if (!count) {
+    callback();
   } else {
-    func(count)
-    setTimeout(function posponedTimes(){
-      times(--count, func, callback)
-    }, 0) 
+    func(count);
+    setTimeout(function posponedTimes() {
+      times(--count, func, callback);
+    }, 0);
   }
 }
 
-
-
-function task (num) {
-  console.time('task')
+function task(num) {
+  console.time("task");
   Math.pow(5 * 2, 2);
-  console.timeEnd('task')
+  console.timeEnd("task");
 }
 
-
-let internalId = setInterval(function logClick(){
-  console.log('click!')
-}, 10)
+let internalId = setInterval(function logClick() {
+  console.log("click!");
+}, 10);
 
 setTimeout(function() {
-  console.time('times')
+  console.time("times");
   times(100, task, function() {
-    console.timeEnd('times')
-    clearInterval(internalId)
-  })
-}, 50)
+    console.timeEnd("times");
+    clearInterval(internalId);
+  });
+}, 50);

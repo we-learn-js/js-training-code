@@ -1,4 +1,4 @@
-console.clear()
+console.clear();
 
 class Employee {
   constructor(firstName, familyName) {
@@ -7,7 +7,7 @@ class Employee {
   }
 
   getFullName() {
-    return this._firstName + ' ' + this._familyName;
+    return this._firstName + " " + this._familyName;
   }
 }
 
@@ -19,7 +19,7 @@ class Manager {
   }
 
   getFullName() {
-    return this._firstName + ' ' + this._familyName;
+    return this._firstName + " " + this._familyName;
   }
 
   addEmployee(...args) {
@@ -27,15 +27,12 @@ class Manager {
   }
 }
 
+var manager = new Manager("Evan", "Graham");
+var employee1 = new Employee("Rachel", "Green");
+var employee2 = new Employee("David", "Smith");
 
-var manager = new Manager('Evan', 'Graham')
-var employee1 = new Employee('Rachel', 'Green')
-var employee2 = new Employee('David', 'Smith')
+manager.addEmployee(employee1, employee2);
 
-manager.addEmployee(employee1, employee2 )
-
-console.log(manager.getFullName())
-console.log(employee1.getFullName())
-console.log(employee2.getFullName())
-
-
+console.log(manager.getFullName());
+console.log(employee1.getFullName());
+console.log(employee2.getFullName());

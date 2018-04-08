@@ -1,6 +1,6 @@
-function countdown (num) {
+function countdown(num) {
   for (var i = 0; i <= num; i += 1) {
-    setTimeout(function () {
+    setTimeout(function() {
       console.log(num - i);
     }, i * 1000);
   }

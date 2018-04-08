@@ -1,55 +1,47 @@
-
-console.clear()
-
+console.clear();
 
 class LoginForm {
   constructor(form) {
-    this.form = form
-    this.messages = document.getElementById('messages')
-    
-    this.form
-      .addEventListener('submit', this.submit.bind(this))
-    document.getElementById('message-button')
-      .addEventListener('click', this.closeMessage.bind(this))
-    this.messages.style.display = 'none'
-  }
-  
-  submit (event) {
-    event.preventDefault()
-    if(this.isFormFilledIn()) {
-      this.apiLogin()
-        .then( () => {
-          this.showMessage('Login successfull')
-          document.location.href = '#home'
-        })
-        .catch(() => this.showMessage('Wrong user or password'))
-    }else {
-      this.showMessage('Please type username and password')
-    }
-    
-  }
-  
-  isFormFilledIn () {
-    return !!(this.form.username.value && this.form.password.value)
+    this.form = form;
+    this.messages = document.getElementById("messages");
+
+    this.form.addEventListener("submit", this.submit.bind(this));
+    document
+      .getElementById("message-button")
+      .addEventListener("click", this.closeMessage.bind(this));
+    this.messages.style.display = "none";
   }
 
-  showMessage (text) {
-    this.messages.style.display = 'block'
-    document
-      .getElementById('message-text')
-      .innerHTML = text
+  submit(event) {
+    event.preventDefault();
+    if (this.isFormFilledIn()) {
+      this.apiLogin()
+        .then(() => {
+          this.showMessage("Login successfull");
+          document.location.href = "#home";
+        })
+        .catch(() => this.showMessage("Wrong user or password"));
+    } else {
+      this.showMessage("Please type username and password");
+    }
   }
-  
-  closeMessage () {
-    this.messages.style.display = 'none'
+
+  isFormFilledIn() {
+    return !!(this.form.username.value && this.form.password.value);
   }
-  
-  apiLogin () {
-    return window.fetch('//my.api.com/login')
+
+  showMessage(text) {
+    this.messages.style.display = "block";
+    document.getElementById("message-text").innerHTML = text;
+  }
+
+  closeMessage() {
+    this.messages.style.display = "none";
+  }
+
+  apiLogin() {
+    return window.fetch("//my.api.com/login");
   }
 }
 
-
-
-
-var loginForm = new LoginForm(document.forms[0])
+var loginForm = new LoginForm(document.forms[0]);

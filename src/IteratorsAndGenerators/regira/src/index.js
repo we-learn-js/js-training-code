@@ -1,14 +1,13 @@
-console.clear()
+console.clear();
 
 class TextLines {
   // YOUR CODE GOES HERE
 }
 
+var lines = new TextLines(getText());
 
-var lines = new TextLines(getText())
-
-for( var line of lines ) {
-  console.log(line)
+for (var line of lines) {
+  console.log(line);
 }
 
 // OUTPUT
@@ -19,40 +18,7 @@ for( var line of lines ) {
 // "Si tôt que moi ce but. Si tôt ? Êtes-vous sage ?"
 // ...
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function getText () {
+function getText() {
   return `LE LIÈVRE ET LA TORTUE
 Rien ne sert de courir ; il faut partir à point.
 Le Lièvre et la Tortue en sont un témoignage.
@@ -65,5 +31,5 @@ Sage ou non, je parie encore.
 Ainsi fut fait : et de tous deux
 On mit près du but les enjeux.
 Savoir quoi, ce n'est pas l'affaire ;
-Ni de quel juge l'on convint. `
+Ni de quel juge l'on convint. `;
 }

@@ -1,4 +1,4 @@
-console.clear()
+console.clear();
 
 // Collection inherits from Array
 //
@@ -8,24 +8,21 @@ console.clear()
 // findBy(property, value)
 // Returns element that matches property = value
 
-var Collection = function() {
+var Collection = function() {};
 
-  
-}
-
-var collection = new Collection()
+var collection = new Collection();
 collection.push(
-  { name: 'Evan', lastName: 'Graham' },
-  { name: 'Rachel', lastName: 'Green' },
-  { name: 'Janice', lastName: 'Yemen' },
-  { name: 'Ross', lastName: 'Green' }
-)
+  { name: "Evan", lastName: "Graham" },
+  { name: "Rachel", lastName: "Green" },
+  { name: "Janice", lastName: "Yemen" },
+  { name: "Ross", lastName: "Green" }
+);
 
-console.log(collection.length)
+console.log(collection.length);
 // 4
-console.log(collection.findBy('lastName', 'Green'))
+console.log(collection.findBy("lastName", "Green"));
 // { lastName: "Green", name: "Rachel" }
-console.log(collection.sortBy('name'))
+console.log(collection.sortBy("name"));
 // 0: { lastName: "Graham", name: "Evan" },
 // 1: { lastName: "Yemen", name: "Janice" },
 // 2: { lastName: "Green", name: "Rachel" },
