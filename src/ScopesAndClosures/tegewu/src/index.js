@@ -1,15 +1,13 @@
-
-
 function addButtons(num) {
   for (var i = 0; i < num; i++) {
-    var $button = jQuery("<button>Button " + i + "</button>");
+    var $button = jQuery('<button>Button ' + i + '</button>')
 
     $button.click(function() {
-      console.log("This is button" + i);
-    });
+      console.log('This is button' + i)
+    })
 
-    $(document.body).append($button);
+    $(document.body).append($button)
   }
 }
 
-addButtons(10);
+addButtons(10)

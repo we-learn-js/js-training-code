@@ -1,34 +1,32 @@
-
-
-describe("jQuery", () => {
-  var fixturesElement;
+describe('jQuery', () => {
+  var fixturesElement
 
   before(() => {
-    fixturesElement = document.createElement("DIV");
-    document.body.appendChild(fixturesElement);
-  });
+    fixturesElement = document.createElement('DIV')
+    document.body.appendChild(fixturesElement)
+  })
 
-  after(() => {});
+  after(() => {})
 
-  describe("#append", () => {
-    var button;
+  describe('#append', () => {
+    var button
 
     beforeEach(() => {
-      button = document.createElement("Button");
-      button.innerHTML = "TEST APPEND BUTTON";
-      button.id = "test-append-button";
-      $(fixturesElement).append(button);
-    });
+      button = document.createElement('Button')
+      button.innerHTML = 'TEST APPEND BUTTON'
+      button.id = 'test-append-button'
+      $(fixturesElement).append(button)
+    })
 
-    afterEach(() => {});
+    afterEach(() => {})
 
-    it("should add element to target element", () => {
-      var foundElement = document.getElementById("test-append-button");
-      expect(foundElement).to.exist;
-      expect(foundElement).to.equal(button);
-      expect(foundElement.parentNode).to.equal(fixturesElement);
-    });
-  });
-});
+    it('should add element to target element', () => {
+      var foundElement = document.getElementById('test-append-button')
+      expect(foundElement).to.exist
+      expect(foundElement).to.equal(button)
+      expect(foundElement.parentNode).to.equal(fixturesElement)
+    })
+  })
+})
 
-mocha.run();
+mocha.run()

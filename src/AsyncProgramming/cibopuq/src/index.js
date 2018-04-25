@@ -1,129 +1,127 @@
-
-
-var log = console.log;
+var log = console.log
 
 Promise.resolve(1)
   .then(function() {
-    log("###### case 1 #####");
+    log('###### case 1 #####')
     // `thens` are not executed after rejection
     return Promise.resolve(1)
       .then(() => {
-        log("then 1.0");
+        log('then 1.0')
       })
       .then(() => {
-        throw "A";
+        throw 'A'
       })
       .then(() => {
-        log("then 1.1");
+        log('then 1.1')
       })
       .then(() => {
-        log("then 1.2");
+        log('then 1.2')
       })
       .then(() => {
-        log("then 1.3");
-      });
+        log('then 1.3')
+      })
   })
   .catch(function() {
-    log("###### case 2 #####");
+    log('###### case 2 #####')
     // `thens` are executed after a catch
     return Promise.resolve(1)
       .then(() => {
-        log("then 2.0");
+        log('then 2.0')
       })
       .then(() => {
-        throw "A";
+        throw 'A'
       })
       .then(() => {
-        log("then 2.1");
+        log('then 2.1')
       })
       .catch(e => {
-        log("catch 2.0 - " + e);
+        log('catch 2.0 - ' + e)
       })
       .then(() => {
-        log("then 2.2");
-      });
+        log('then 2.2')
+      })
   })
   .then(function() {
-    log("###### case 3 #####");
+    log('###### case 3 #####')
     // `catch` returns a fulfilled promise by default
     return Promise.resolve(1)
       .then(() => {
-        log("then 3.0");
+        log('then 3.0')
       })
       .then(() => {
-        throw "A";
+        throw 'A'
       })
       .catch(e => {
-        log("catch 3.0 - " + e);
+        log('catch 3.0 - ' + e)
       })
       .then(() => {
-        log("then 3.1");
+        log('then 3.1')
       })
       .catch(e => {
-        log("catch 3.1 - " + e);
-      });
+        log('catch 3.1 - ' + e)
+      })
   })
   .then(function() {
-    log("###### case 4 #####");
+    log('###### case 4 #####')
     // `catch` returns a rejected promise
     return Promise.resolve(1)
       .then(() => {
-        log("then 4.0");
+        log('then 4.0')
       })
       .then(() => {
-        throw "A";
+        throw 'A'
       })
       .catch(e => {
-        log("catch 4.0 - " + e);
-        return Promise.reject(e);
+        log('catch 4.0 - ' + e)
+        return Promise.reject(e)
       })
       .then(() => {
-        log("then 4.1");
+        log('then 4.1')
       })
       .catch(e => {
-        log("catch 4.1 - " + e);
-      });
+        log('catch 4.1 - ' + e)
+      })
   })
   .then(function() {
-    log("###### case 5 #####");
+    log('###### case 5 #####')
     // `catch` returns a promise that can be fulfilled or rejected
     return Promise.resolve(1)
       .then(() => {
-        log("then 5.0");
+        log('then 5.0')
       })
       .then(() => {
-        throw "A";
+        throw 'A'
       })
       .catch(e => {
-        log("catch 5.0 - " + e);
+        log('catch 5.0 - ' + e)
       })
       .then(() => {
-        log("then 5.1");
+        log('then 5.1')
       })
       .then(() => {
-        throw "B";
+        throw 'B'
       })
       .then(() => {
-        log("then 5.2");
+        log('then 5.2')
       })
       .catch(e => {
-        log("catch 5.1 - " + e);
-      });
+        log('catch 5.1 - ' + e)
+      })
   })
   .then(function() {
-    log("###### case 6 #####");
+    log('###### case 6 #####')
     // `catch` can be use to return a fallback value
     return Promise.resolve(1)
       .then(() => {
-        log("then 6.0");
+        log('then 6.0')
       })
       .then(() => {
-        throw "A";
+        throw 'A'
       })
       .catch(e => {
-        return "fallback value";
+        return 'fallback value'
       })
       .then(x => {
-        log("then 6.1 - " + x);
-      });
-  });
+        log('then 6.1 - ' + x)
+      })
+  })

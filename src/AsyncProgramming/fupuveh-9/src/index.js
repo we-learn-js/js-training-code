@@ -1,21 +1,19 @@
-
-
-var times = 30;
-var traversedElements = 0;
+var times = 30
+var traversedElements = 0
 
 function traverseRecursion(current, depth) {
-  var children = current.childNodes;
+  var children = current.childNodes
   for (var i = 0, len = children.length; i < len; i++) {
-    traversedElements++;
+    traversedElements++
     if (traversedElements === 1640) {
-      next();
+      next()
     }
     setTimeout(
       (function(current, depth) {
-        traverseRecursion(current, depth);
+        traverseRecursion(current, depth)
       })(children[i], depth + 1),
       0
-    );
+    )
   }
 }
 
@@ -23,11 +21,11 @@ function traverseRecursion(current, depth) {
 
 function next() {
   if (--times > 0) {
-    console.timeEnd("asynchronous");
-    console.time("asynchronous");
-    traversedElements = 0;
-    traverseRecursion(document.getElementById("parent-element"), 0);
+    console.timeEnd('asynchronous')
+    console.time('asynchronous')
+    traversedElements = 0
+    traverseRecursion(document.getElementById('parent-element'), 0)
   }
 }
 
-next();
+next()

@@ -1,20 +1,19 @@
-
 class TextLines {
   constructor(text) {
-    this._lines = text.split("\n");
+    this._lines = text.split('\n')
   }
 
   *[Symbol.iterator]() {
     for (let line of this._lines) {
-      yield line;
+      yield line
     }
   }
 }
 
-var lines = new TextLines(getText());
+var lines = new TextLines(getText())
 
 for (var line of lines) {
-  console.log(line);
+  console.log(line)
 }
 
 // OUTPUT
@@ -38,5 +37,5 @@ Sage ou non, je parie encore.
 Ainsi fut fait : et de tous deux
 On mit près du but les enjeux.
 Savoir quoi, ce n'est pas l'affaire ;
-Ni de quel juge l'on convint. `;
+Ni de quel juge l'on convint. `
 }

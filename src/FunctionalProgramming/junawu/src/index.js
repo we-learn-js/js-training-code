@@ -1,18 +1,17 @@
-
 var videos = [
   {
     id: 70111470,
-    title: "Die Hard",
-    boxart: "http://cdn-0.nflximg.com/images/2891/DieHard.jpg",
-    uri: "http://api.netflix.com/catalog/titles/movies/70111470",
+    title: 'Die Hard',
+    boxart: 'http://cdn-0.nflximg.com/images/2891/DieHard.jpg',
+    uri: 'http://api.netflix.com/catalog/titles/movies/70111470',
     rating: 4.0,
     bookmark: []
   },
   {
     id: 654356453,
-    title: "Bad Boys",
-    boxart: "http://cdn-0.nflximg.com/images/2891/BadBoys.jpg",
-    uri: "http://api.netflix.com/catalog/titles/movies/70111470",
+    title: 'Bad Boys',
+    boxart: 'http://cdn-0.nflximg.com/images/2891/BadBoys.jpg',
+    uri: 'http://api.netflix.com/catalog/titles/movies/70111470',
     rating: 5.0,
     bookmark: [
       {
@@ -23,17 +22,17 @@ var videos = [
   },
   {
     id: 65432445,
-    title: "The Chamber",
-    boxart: "http://cdn-0.nflximg.com/images/2891/TheChamber.jpg",
-    uri: "http://api.netflix.com/catalog/titles/movies/70111470",
+    title: 'The Chamber',
+    boxart: 'http://cdn-0.nflximg.com/images/2891/TheChamber.jpg',
+    uri: 'http://api.netflix.com/catalog/titles/movies/70111470',
     rating: 4.0,
     bookmark: []
   },
   {
     id: 675465,
-    title: "Fracture",
-    boxart: "http://cdn-0.nflximg.com/images/2891/Fracture.jpg",
-    uri: "http://api.netflix.com/catalog/titles/movies/70111470",
+    title: 'Fracture',
+    boxart: 'http://cdn-0.nflximg.com/images/2891/Fracture.jpg',
+    uri: 'http://api.netflix.com/catalog/titles/movies/70111470',
     rating: 5.0,
     bookmark: [
       {
@@ -42,10 +41,10 @@ var videos = [
       }
     ]
   }
-];
+]
 
 function getBestVideosIds(videos) {
   // YOUR CODE GOES HERE
 }
 
-console.log(getBestVideosIds(videos)); // OUTPUT [654356453, 675465]
+console.log(getBestVideosIds(videos)) // OUTPUT [654356453, 675465]
