@@ -1,4 +1,4 @@
-console.clear();
+
 
 // This is a simplified implementation of `require`
 var require = function(func) {

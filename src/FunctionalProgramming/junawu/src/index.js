@@ -1,4 +1,4 @@
-console.clear();
+
 var videos = [
   {
     id: 70111470,

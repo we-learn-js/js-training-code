@@ -1,4 +1,4 @@
-console.clear();
+
 
 var games = {
   callOfDuty: { name: "Call of duty" },

@@ -1,4 +1,4 @@
-console.clear();
+
 
 var times = 30;
 var traversedElements = 0;

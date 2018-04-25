@@ -1,4 +1,4 @@
-console.clear();
+
 
 class Employee {
   constructor(firstName, familyName) {

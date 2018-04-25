@@ -1,4 +1,4 @@
-console.clear();
+
 
 var promise = Promise.resolve(1); // Promise
 

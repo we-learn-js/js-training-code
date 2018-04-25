@@ -1,5 +1,5 @@
 "// noprotect";
-console.clear();
+
 
 function times(count, func, callback) {
   if (!count) {

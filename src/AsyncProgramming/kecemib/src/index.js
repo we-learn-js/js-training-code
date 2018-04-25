@@ -1,4 +1,4 @@
-console.clear();
+
 
 console.log("###### case 1 #####");
 Promise.resolve(1)

@@ -1,4 +1,4 @@
-console.clear();
+
 class TextLines {
   constructor(text) {
     this._text = text;
@@ -37,7 +37,7 @@ Le Lièvre et la Tortue en sont un témoignage.
 Gageons, dit celle-ci, que vous n'atteindrez point
 Si tôt que moi ce but. Si tôt ? Êtes-vous sage ?
 Repartit l'Animal léger.(2)
-Ma Commère, il vous faut purger 
+Ma Commère, il vous faut purger
 Avec quatre grains (3) d'ellébore.
 Sage ou non, je parie encore.
 Ainsi fut fait : et de tous deux

@@ -1,4 +1,4 @@
-console.clear();
+
 
 var log = console.log;
 

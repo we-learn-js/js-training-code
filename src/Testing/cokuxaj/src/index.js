@@ -1,4 +1,4 @@
-console.clear();
+
 
 describe("jQuery", () => {
   var fixturesElement;

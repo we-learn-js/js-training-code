@@ -1,4 +1,4 @@
-console.clear();
+
 
 class PersonCarTransportation {
   goToAddress(address) {
@@ -44,7 +44,7 @@ new Person("car").goToAddress(destination);
 new Person("publicTransports").goToAddress(destination);
 new Person().goToAddress(destination);
 
-/* 
+/*
 // OUTPUT
 "Go by car, managing traffic, stop lights, etc"
 "Go by public Transportation, going to bus stop, paying, etc"

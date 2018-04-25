@@ -1,4 +1,4 @@
-console.clear();
+
 
 function getOneUser() {
   return new Promise(function(resolve) {

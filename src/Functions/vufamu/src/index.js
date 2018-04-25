@@ -1,4 +1,4 @@
-console.clear();
+
 
 window.addEventListener("load", function(event) {
   throw new Error("Anonymous Error");

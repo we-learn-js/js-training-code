@@ -1,4 +1,4 @@
-console.clear();
+
 
 class PersonState {
   constructor(person) {
@@ -64,7 +64,7 @@ person.goToAddress(destination);
 person.setCar(null);
 person.goToAddress(destination);
 
-/* 
+/*
 // OUTPUT
 "Go by foot, managing sidewalks, stop lights, etc"
 "Go by public Transportation, going to bus stop, paying, etc"

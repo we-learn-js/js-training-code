@@ -1,4 +1,4 @@
-console.clear();
+
 
 function addButtons(num) {
   for (var i = 0; i < num; i++) {

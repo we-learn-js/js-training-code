@@ -1,4 +1,4 @@
-console.clear();
+
 
 function upper(text) {
   return text.toUpperCase();

@@ -1,4 +1,4 @@
-console.clear();
+
 
 describe("Array", () => {
   before(() => {

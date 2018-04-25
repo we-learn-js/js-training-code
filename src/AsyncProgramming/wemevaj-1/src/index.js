@@ -1,4 +1,4 @@
-console.clear();
+
 
 var getUsers = function(callback, limit) {
   $.get("//jsonplaceholder.typicode.com/users").done(function(response) {

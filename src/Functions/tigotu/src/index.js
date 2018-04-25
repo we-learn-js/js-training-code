@@ -1,4 +1,4 @@
-console.clear();
+
 
 function flatten(arr) {}
 

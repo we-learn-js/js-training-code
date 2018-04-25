@@ -1,4 +1,4 @@
-console.clear();
+
 
 // compact()
 // Creates an array with all falsey values removed.

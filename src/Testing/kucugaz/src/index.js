@@ -1,4 +1,4 @@
-console.clear();
+
 
 function getUsers(callback, limit) {
   var oReq = new XMLHttpRequest();

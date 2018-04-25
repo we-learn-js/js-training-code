@@ -1,4 +1,4 @@
-console.clear();
+
 
 class LoginForm {
   constructor(form) {

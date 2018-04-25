@@ -1,4 +1,4 @@
-console.clear();
+
 
 var Collection = function() {};
 

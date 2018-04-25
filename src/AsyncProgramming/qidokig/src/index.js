@@ -1,4 +1,4 @@
-console.clear();
+
 
 Promise.delay = function(ms) {
   // YOUR CODE GOES HERE

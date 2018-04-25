@@ -1,4 +1,4 @@
-console.clear();
+
 
 var form = document.getElementById("my-form");
 

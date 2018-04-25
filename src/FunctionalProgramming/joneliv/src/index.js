@@ -1,4 +1,4 @@
-console.clear();
+
 
 function repeat(operation, num) {}
 

@@ -1,4 +1,4 @@
-console.clear();
+
 
 var getDelayed = function(ms, name) {
   return new Promise(function(resolve) {
