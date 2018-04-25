@@ -1,0 +1,22 @@
+{
+  "name": "js-training-code",
+  "version": "0.0.0",
+  "description": "Code snippets and exercises from JS Training",
+  "scripts": {
+    "format":
+      "prettier --write --config ./prettierrc.js src/**/*.js src/**/*.json ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we-learn-js/js-training-code.git"
+  },
+  "author": "David Almeida <davidbarna@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/we-learn-js/js-training-code/issues"
+  },
+  "homepage": "https://github.com/we-learn-js/js-training-code#readme",
+  "devDependencies": {
+    "prettier": "1.12.1"
+  }
+}
